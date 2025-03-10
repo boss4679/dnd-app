@@ -46,7 +46,7 @@ def get_sessions():
 @app.route('/characters', methods=['POST'])
 def create_character():
     data = request.json
-    character = Character(title=data['title'], role=data['role'], campaign_id=data['campaign_id'])
+    character = Character(title=data['title'], description=data['description'], campaign_id=data['campaign_id'])
     db.session.add(character)
     db.session.commit()
     return jsonify({"message": "Character created!", "id": character.id})
@@ -54,7 +54,7 @@ def create_character():
 @app.route('/characters', methods=['GET'])
 def get_characters():
     characters = Character.query.all()
-    return jsonify([{"id": c.id,"title": c.title,"campaign_id": c.campaign_id} for c in characters])
+    return jsonify([{"id": c.id,"title": c.title,"description": c.description,"campaign_id": c.campaign_id} for c in characters])
 
 
 @app.route('/locations', methods=['POST'])
