@@ -1,0 +1,179 @@
+.Default {
+  text-align: center;
+  background-color: #630000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+  position: absolute;  /* Absolute positioning allows free placement */
+  top: 0px;              /* Position 0px from the top */
+  left: 0px; 
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dnd-header {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font: 22;
+}
+.dropdown-container {
+  width: 300px; /* Set the width of the dropdown container */
+  margin: 0px auto; /* Center the dropdown on the page */
+  text-align: center; /* Center align the label */
+}
+
+
+/* Style the dropdown select box */
+#dropdown {
+  width: 100%; /* Make the dropdown take full width of the container */
+  padding: 10px; /* Add padding inside the dropdown for better spacing */
+  font-size: 20px; /* Set font size */
+  background-color: #f0f0f0; /* Light grey background color */
+  border: 1px solid #ccc; /* Light border for the dropdown */
+  border-radius: 5px; /* Rounded corners for the dropdown */
+  appearance: none; /* Remove default dropdown arrow in some browsers */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+}
+
+/* Style the dropdown options */
+#dropdown option {
+  font-size: 20px;
+}
+
+/* Optional: Add a custom arrow */
+#dropdown::-ms-expand {
+  display: none; /* Hide the default dropdown arrow in IE/Edge */
+}
+
+.input-container {
+  width: 600px; /* Set the width of the dropdown container */
+  margin: 15px auto; /* Center the dropdown on the page */
+  text-align: center; /* Center align the label */
+}
+
+textarea {
+  width: 100%; /* Make the textarea take full width */
+  height: 300px; /* Set height */
+  padding: 10px; /* Add padding inside the textarea */
+  font-size: 16px; /* Set font size */
+  background-color: #f0f0f0; /* Light grey background color */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 15px; /* Rounded corners */
+  appearance: none; /* Remove default browser styling */
+  cursor: text; /* Ensure cursor is text */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  text-align: left; /* Align text to the left */
+  resize: vertical; /* Allow vertical resizing */
+  overflow: auto; /* Enable scrolling if needed */
+}
+
+/* Optional: Add focus effect for better UI */
+textarea:focus {
+  background-color: #fff; /* White background on focus */
+  border-color: #007bff; /* Highlight border */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  background-color: #f0f0f0; /* Light grey background color */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 25px; /* Rounded corners */
+  appearance: none; /* Remove default browser styling */
+  cursor: text; /* Ensure cursor is text */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.campaign-input {
+  align-self: center;
+  width: 25%; /* Make the textarea take full width */
+  padding: 10px; /* Add padding inside the textarea */
+  font-size: 16px; /* Set font size */
+  background-color: #f0f0f0; /* Light grey background color */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 15px; /* Rounded corners */
+  appearance: none; /* Remove default browser styling */
+  cursor: text; /* Ensure cursor is text */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  text-align: center; /* Align text to the left */
+  resize: vertical; /* Allow vertical resizing */
+  overflow: auto; /* Enable scrolling if needed */
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 5px; /* Space between label and textarea */
+  align-self: center;
+  margin-top: 15px;
+  
+
+}
+.custom-style {
+  margin-left: -700px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Puts elements on opposite sides */
+  align-items: center; /* Aligns them at the top */
+  width: 100%;
+}
+
+.campaign-dropdown, .input-section {
+  flex: 1; /* Makes both sections take equal space */
+}
+
+/* Position the button in the top right corner */
+.top-right-button {
+  position: absolute;
+  top: 20px; /* Adjust the space from the top */
+  right: 20px; /* Adjust the space from the right */
+  background-color: #f0f0f0; /* Light grey background color */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 25px; /* Rounded corners */
+  appearance: none; /* Remove default browser styling */
+  cursor: text; /* Ensure cursor is text */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes left padding */
+}
+
+li {
+  margin-bottom: -10px; /* Optional: adds some space between each button */
+}
+
+
+
